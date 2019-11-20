@@ -31,7 +31,13 @@ namespace ArexxMatrix {
             MatrixWidth = Width
         }
     }
-
+    
+    export function clearall(){
+    clearstrip = neopixel.create(DigitalPin.P0, 800, NeoPixelMode.RGB)
+    clearstrip.clear()
+    clearstrip.show()
+    delete clearstrip
+    }
 
     //%block
     //%advanced=true
